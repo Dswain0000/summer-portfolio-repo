@@ -50,4 +50,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+.header-text-h1-span{
+    color: cadetblue;
+}
 
