@@ -1,116 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a8c8c7686c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-      <div class="container">
+  <div id="header">
+    <div class="container">
       <nav>
         <img src="images/THGP_Logo.png" class="logo" alt="THGP logo" id="logo">
         <ul> 
           <li><a href="#">Home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
           <li><a href="#">Portfolio</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
       <div class="header text">
         <p>criminal defense attorney</p>
-        <h3>Hello my name is <span>David</span> and Im a lawyer at Swains law firm<br> from Richmond, Ca</h3>
-
-      </div>
-    </div>
-    </div>
-
-    <!--About Me-->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-
-          <div class="about-col-1"> 
-            <img src="images/IMG_20230613_153358763.jpg">
-          </div>
-         
-          <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
-            <p>Hey my name is David and i'm from Richmond, Ca</p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">education</p>
-            </div>
-<!--skills-->
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Python coding</span><br> basic web devolpment</li>
-                <li><span>poetry</span><br>reading court documents</li>
-                
-              </ul>
-            </div>
-<!---->
-            <div class="tab-contents" id="Experience" >
-              <ul>
-                <li><span>Python coding</span><br> basic web devolpment</li>
-                <li><span>poetry</span><br>reading court documents</li>
-                
-              </ul>
-          </div>
-     <!---->
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>Python coding</span><br> basic web devolpment</li>
-              <li><span>poetry</span><br>reading court documents</li>
-              
-            </ul>
-        </div>
-      </div>
-    </div> 
-  <!--services-->
-    <div id="services">
-    <div class="container">
-      <h1 class="sub-title">My services</h1>
-      <div class="services-list">
-        <div>
-         
-         <h2>I can help you read court documents or if you're struggling to learn HTML I can help you out</h2>
-         <p> 
-          I am still learning HTML as I make this but I am still able to help others because I can 
-         </p>
-        </div>
-
+        <h3>Hello my name is <span>David</span> and I'm a lawyer at Swains law firm<br> from Richmond, Ca</h3>
       </div>
     </div>
   </div>
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
 
-      function opentab(tabname)
-      {
+  <!-- About Me -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1"> 
+          <img src="images/IMG_20230613_153358763.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>Hey my name is David and I'm from Richmond, Ca</p>
 
-        for(tablink of tablinks)
-        {
-          tablink.classList.remove("active-link");
-        }
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
 
-        for(tabcontent of tabcontents)
-        {
-          tabcontent.classList.remove("active-tab");
-        }
+          <!-- skills -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Python coding</span><br> Right now at the Hidden Genius Project we're learning how to code using python and so far I know how to make a baisc 2 player game of rock paper sisscors</li>
+              <li><span>Poetry</span><br>During 9th grade year I joined an online poetry club where every week we were assigned to write a poem on a given topic, one I found the most challanging was when we had to write a poem about the Capital stomring</li>
+            </ul>
+          </div>
 
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+          <!-- Experience -->
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>I'm currently enrolled in the Hidden Genius Project</span><br> The Hidden Genius Project trains and mentors Black male youth in technology creation, entrepreneurship, and leadership skills to transform their lives and communities.</li>
+              <li><span>Center for Youth Development through law</span><br> The CYDL is a full-time 2-month program that provides paid internships along with mentoring through the use of restorative justice circles, lastly the program also held a mock trial as our end of year assignment where program members would play certain roles like attorney, witness, defendant, etc.</li>
+            </ul>
+          </div>
 
+          <!-- Education -->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2012-2019</span><br>E school  </li>
+              <li><span>Poetry</span><br> Back in 9th grade I had joined an online po</li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div id="services">
+    <div class="container">
+      <h3 class="sub-title">My services</h3>
+      <div class="services-list"> 
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>I can help you read court documents</h2>
+          <p>I went to another program that was law-related called the CYDL which taught us how to read court documents along with mock trials to get us the feel of being in a courtroom.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-gavel"></i>
+          <h1>I want to be a criminal defense attorney</h1>
+          <p>I'm still in high school but I hope to go to UC Berkeley so that I can transfer to UC Berkeley law school so that I can become a lawyer in Detroit or Florida.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-terminal"></i>
+          <h2>If you're struggling to learn HTML I can help you out</h2>
+          <p>I am still learning HTML as I make this but I am still able to help others because I can understand HTML pretty well on my own and I can explain HTML well.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
       }
-    </script>
 
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
 
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
 </body>
 </html>
-
