@@ -50,8 +50,8 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text-h1-span{
-    color: cadetblue;
+.header-text h1 span{
+    color: darkgoldenrod;
 }
 
 /*-----about-----*/
@@ -156,8 +156,31 @@ margin-bottom: 30px;
 .services-list div a{
     text-decoration: none;
     color: blue;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
 }
 .services-list div:hover{
   background: red;
   transform: translateY(-10px);
+}
+/*portfolio------*/
+#portfolio{
+    padding: 50px 0;
+}
+.hobbies-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.hobbies{
+ border-radius:  10px;
+ position: relative;
+ overflow: hidden;
+}
+.hobbies img{
+    width: 100%;
+    border-radius: 10px;
+    display: block ;
 }
