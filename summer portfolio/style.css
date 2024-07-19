@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: ;
+}
 body{ 
 background-color: darkred;
 }
@@ -57,7 +60,7 @@ nav ul li a:hover::after{
 /*-----about-----*/
 #about{
     padding: 80px;
-    color: black;
+    color: whitesmoke;
 }
 
 .row{
@@ -79,7 +82,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 69px;
     font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    color:whitesmoke;
 }
 
 .tab-titles{
@@ -183,9 +186,51 @@ margin-bottom: 30px;
     width: 100%;
     border-radius: 10px;
     display: block ;
+    transition: 0.5;
 }
 .layer{
     width: 100%;
     height: 100%;
-    background:linear-gradient(rgba(0,0,0,0));
+    background:linear-gradient(rgba(0,0,0,0.6)#ff005f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+font-size: 14px;
+transition: height 0.5s;
+}
+.layer h3{
+font-weight: 500;
+margin-bottom: 20px ;
+}
+.layer a{
+    margin-top: 20px;
+    color: rgba(3, 112, 17, 0.616);
+    text-decoration: wavy;
+    font-size: 18px;
+    line-height: 60px;
+    background: rgb(0, 0, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.hobbies:hover img {
+    transform: scale(1.1);
+}
+work:hover .layer{
+height: 100%; 
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(red, green, blue);
 }
