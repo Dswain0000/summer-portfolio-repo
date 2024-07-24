@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth ;
 }
 body{ 
-background-color: darkred;
+background-color: rgb(40, 3, 3);
 }
 *{
 margin: 0px;
@@ -233,7 +233,9 @@ margin-bottom: 20px ;
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+#fonts{
+    font-size: 15px;
+}
 .hobbies:hover img {
     transform: scale(1.1);
 }
@@ -251,4 +253,32 @@ height: 100%;
 }
 .btn:hover{
     background: black;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{margin-top: 30px;
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: bisque;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+ margin-top: 30px;
+}
+.social-icons a{
+text-decoration: dotted;
+font-size: 30px;
+margin-right: 15px;
+color: blanchedalmond;
+display: inline-table;
+}
+.social-icons a:hover{
+    color:  black;
+    transform: translateY(-5px);
 }
