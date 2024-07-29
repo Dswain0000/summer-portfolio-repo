@@ -146,44 +146,74 @@
  <!---------CONTACT-------->
  <div id="contact">
   <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact me</h1>
-        <p><i class="fa-sharp fa-solid fa-plane-departure"></i>Contact@davidswain099@gmail.com</p>
-        <p><i class="fa-sharp fa-solid fa-phone-volume"></i>3412031931</p>
-       <div class="social-icons">
-        <i class="fa-brands fa-instagram"></i>
-       </div>
-        </div>
-        <div class="contact-right">
-          <form>
-            <input type="text" name="Name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-regular fa-paper-plane"></i>  david.waters@hgs.hiddengeniusproject.org</p>
+              <p><i class="fa-solid fa-phone"></i> (341-203-1931)</p>
+              <div class="social-icons">
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="contact-right"></div>
+          <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
           </form>
-        </div>
-        </div>
+          <span id="msg"></span>
       </div>
-    </div>
   </div>
- </div>
-  <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
+  <div class="copyright">
+      <p>Copyright © David Swain. Made with <i class="fa-solid fa-heart"></i> by David Swain. </p>
+  </div>
+</div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+      for(tablink of tablinks){
+          tablink.classList.remove("active-link")
       }
-
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
+      for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab")
       }
-
       event.currentTarget.classList.add("active-link");
       document.getElementById(tabname).classList.add("active-tab");
-    }
-  </script>
+  }
+</script>
+<script>
+  const scriptURL = ''
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+              msg.innerHTML = ""
+          },5000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
+
+
+
+
+NEW
+
+
+
+
+
+
+
+
+
+
