@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth ;
 }
 body{ 
-background-color: rgb(37, 118, 125);
+background-color: rgb(57, 183, 151);
 }
 *{
 margin: 0px;
@@ -38,7 +38,7 @@ nav ul li{
 }
 nav ul li a{ 
 text-decoration: none;
-color: rgba(0, 83, 82, 0.693);
+color: rgba(47, 238, 235, 0.693);
 font-size: 30px;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -103,7 +103,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0px;
     height: 3px;
-    background-color: rgb(40, 63, 125);
+    background-color: rgb(42, 78, 175);
     position: absolute;
     left: 0px;
     bottom: -8px;
@@ -165,7 +165,7 @@ margin-bottom: 30px;
     display: inline-block;
 }
 .services-list div:hover{
-  background: rgb(16, 36, 149);
+  background: rgba(88, 109, 227, 0.715);
   transform: translateY(-10px);
 }
 /*portfolio------*/
